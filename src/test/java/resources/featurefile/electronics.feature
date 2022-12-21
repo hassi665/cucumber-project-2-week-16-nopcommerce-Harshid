@@ -28,7 +28,7 @@ Feature: Checkout from shopping cart in Electronic
     And    I Click on “REGISTER” Button
     And    I Verify the message “Your registration completed”
     And    I Click on “CONTINUE” tab
-    And    I Verify the text “Shopping card”
+    And    I Verify the text “Shopping cart”
     And    I click on  checkbox link "I agree with the terms of service"
     And    I Click on  “CHECKOUT” link for product
     And    I Fill the Mandatory fields for reg

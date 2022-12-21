@@ -6,107 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3835373801,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "User can see product in Electronics page in arrange alphabetically",
-        "description": "",
-        "id": "products-page-functionality;user-can-see-product-in-electronics-page-in-arrange-alphabetically",
-        "after": [
-          {
-            "result": {
-              "duration": 628460301,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 103701199,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I am at homepage",
-            "match": {
-              "location": "ComputerPageTestSteps.iAmAtHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 515709100,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I Mouse Hover on “Electronics” Tab",
-            "match": {
-              "location": "ElectronicPageTestSteps.iMouseHoverOnElectronicsTab()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 561862700,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I Mouse Hover on “Cell phones” and click",
-            "match": {
-              "location": "ElectronicPageTestSteps.iMouseHoverOnCellPhonesAndClick()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24450600,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I Verify the text “Cell phones",
-            "match": {
-              "location": "ElectronicPageTestSteps.iVerifyTheTextCellPhones()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 13,
-            "name": "@smoke"
-          },
-          {
-            "line": 13,
-            "name": "@regression"
-          }
-        ]
-      }
-    ],
-    "name": "Products Page Functionality",
-    "description": "As user I can navigate to page as per requirement",
-    "id": "products-page-functionality",
-    "keyword": "Feature",
-    "uri": "ProductPageNavigation.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 3040970100,
+              "duration": 4347173200,
               "status": "passed"
             },
             "match": {
@@ -115,13 +15,13 @@
           }
         ],
         "line": 5,
-        "name": "User can add a product from Computer page in shopping cart successfully",
+        "name": "User Should navigate to selected page",
         "description": "",
-        "id": "product-sucessfully-added-in-shopping-cart;user-can-add-a-product-from-computer-page-in-shopping-cart-successfully",
+        "id": "topmenu-functionality;user-should-navigate-to-selected-page",
         "after": [
           {
             "result": {
-              "duration": 830411800,
+              "duration": 1384623400,
               "status": "passed"
             },
             "match": {
@@ -134,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1013200,
+              "duration": 86254200,
               "status": "passed"
             },
             "line": 6,
@@ -146,551 +46,37 @@
           },
           {
             "result": {
-              "duration": 932451900,
+              "duration": 1723145699,
               "status": "passed"
             },
             "line": 7,
-            "name": "I Click on Computer Menu.",
+            "name": "I select any top menu\u0027s option",
             "match": {
-              "location": "ShoppingCartSteps.iClickOnComputerMenu()"
+              "location": "TopMenuSteps.iSelectAnyTopMenuSOption()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 362719500,
+              "duration": 1979457899,
               "status": "passed"
             },
             "line": 8,
-            "name": "I Click on Desktop",
+            "name": "I click on submenu option",
             "match": {
-              "location": "ShoppingCartSteps.iClickOnDesktop()"
+              "location": "TopMenuSteps.iClickOnSubmenuOption()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 222065801,
+              "duration": 23768501,
               "status": "passed"
             },
             "line": 9,
-            "name": "I Select Sort By position \"Name: A to Z\"",
+            "name": "I can see redirected page name",
             "match": {
-              "arguments": [
-                {
-                  "val": "Name: A to Z",
-                  "offset": 27
-                }
-              ],
-              "location": "ShoppingCartSteps.iSelectSortByPosition(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 102345000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I click on \"Add To Cart\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Add To Cart",
-                  "offset": 12
-                }
-              ],
-              "location": "ShoppingCartSteps.iClickOn(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 20046034400,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027product-name\u0027]/h1\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.6.0\u0027, revision: \u002779f1c02ae20\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4ee215dd3ce0d3d26d384c036106c759, findElement {using\u003dxpath, value\u003d//div[@class\u003d\u0027product-name\u0027]/h1}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\H\\AppData\\Local\\Te...}, goog:chromeOptions: {debuggerAddress: localhost:50252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50252/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4ee215dd3ce0d3d26d384c036106c759\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy23.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.utility.Utility.getTextFromElement(Utility.java:61)\r\n\tat com.nopcommerce.demo.pages.MyOrderPage.getProductName(MyOrderPage.java:59)\r\n\tat com.nopcommerce.demo.steps.ShoppingCartSteps.iVerifyTheText(ShoppingCartSteps.java:63)\r\n\tat ✽.And I Verify the Text \"Build your own computer\"(computer.feature:11)\r\n",
-              "status": "failed"
-            },
-            "line": 11,
-            "name": "I Verify the Text \"Build your own computer\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Build your own computer",
-                  "offset": 19
-                }
-              ],
-              "location": "ShoppingCartSteps.iVerifyTheText(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "I Select \" GHz Intel Pentium Dual-Core E2200\" using Select class",
-            "match": {
-              "arguments": [
-                {
-                  "val": " GHz Intel Pentium Dual-Core E2200",
-                  "offset": 10
-                }
-              ],
-              "location": "ShoppingCartSteps.iSelectUsingSelectClass(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "I Select 8GB HDD using Select class.",
-            "match": {
-              "arguments": [
-                {
-                  "val": "8",
-                  "offset": 9
-                }
-              ],
-              "location": "ShoppingCartSteps.iSelectGBHDDUsingSelectClass(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "I Select HDD radio \"400 GB [+$100.00]\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "400 GB [+$100.00]",
-                  "offset": 20
-                }
-              ],
-              "location": "ShoppingCartSteps.iSelectHDDRadio(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "I Select OS radio \"Vista Premium [+$60.00]\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Vista Premium [+$60.00]",
-                  "offset": 19
-                }
-              ],
-              "location": "ShoppingCartSteps.iSelectOSRadio(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "I Check Two Check boxes \"Microsoft Office [+$50.00]\" and \"Total Commander [+$5.00]\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Microsoft Office [+$50.00]",
-                  "offset": 25
-                },
-                {
-                  "val": "Total Commander [+$5.00]",
-                  "offset": 58
-                }
-              ],
-              "location": "ShoppingCartSteps.iCheckTwoCheckBoxesAnd(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "I Verify the price \"$1,475.00\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "$1,475.00",
-                  "offset": 20
-                }
-              ],
-              "location": "ShoppingCartSteps.iVerifyThePrice(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "I Click on \"ADD TO CARD\" Button.",
-            "match": {
-              "arguments": [
-                {
-                  "val": "ADD TO CARD",
-                  "offset": 12
-                }
-              ],
-              "location": "ShoppingCartSteps.iClickOnButton(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 19,
-            "name": "I Verify the Message \"The product has been added to your shopping cart\" on Top green Bar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "The product has been added to your shopping cart",
-                  "offset": 22
-                }
-              ],
-              "location": "ShoppingCartSteps.iVerifyTheMessageOnTopGreenBar(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "I After that close the bar clicking on the cross button.",
-            "match": {
-              "location": "ShoppingCartSteps.iAfterThatCloseTheBarClickingOnTheCrossButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "I  Then MouseHover on \"Shopping cart\" and Click on \"GO TO CART\" button.",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Shopping cart",
-                  "offset": 23
-                },
-                {
-                  "val": "GO TO CART",
-                  "offset": 52
-                }
-              ],
-              "location": "ShoppingCartSteps.iThenMouseHoverOnAndClickOnButton(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "I Verify the message \"Shopping cart\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Shopping cart",
-                  "offset": 22
-                }
-              ],
-              "location": "ShoppingCartSteps.iVerifyTheMessage(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "I Change the Qty to \"2\" and Click on \"Update shopping cart\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 21
-                },
-                {
-                  "val": "Update shopping cart",
-                  "offset": 38
-                }
-              ],
-              "location": "ShoppingCartSteps.iChangeTheQtyToAndClickOn(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 24,
-            "name": "I  Verify the Total\"$2,950.00\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "$2,950.00",
-                  "offset": 20
-                }
-              ],
-              "location": "ShoppingCartSteps.iVerifyTheTotal(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 25,
-            "name": "I click on checkbox “I agree with the terms of service”",
-            "match": {
-              "location": "ShoppingCartSteps.iClickOnCheckboxIAgreeWithTheTermsOfService()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 26,
-            "name": "I Click on “CHECKOUT”",
-            "match": {
-              "location": "ShoppingCartSteps.iClickOnCHECKOUT()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "I Verify the Text “Welcome, Please Sign In!”",
-            "match": {
-              "location": "ShoppingCartSteps.iVerifyTheTextWelcomePleaseSignIn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "I Click on “CHECKOUT AS GUEST” Tab",
-            "match": {
-              "location": "ShoppingCartSteps.iClickOnCHECKOUTASGUESTTab()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "I Fill the all mandatory field",
-            "match": {
-              "location": "ShoppingCartSteps.iFillTheAllMandatoryField()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 30,
-            "name": "I Click on “CONTINUE”",
-            "match": {
-              "location": "ShoppingCartSteps.iClickOnCONTINUE()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "I Click on Radio Button “Next Day Air($0.00)”",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0",
-                  "offset": 39
-                },
-                {
-                  "val": "00",
-                  "offset": 41
-                }
-              ],
-              "location": "ShoppingCartSteps.iClickOnRadioButtonNextDayAir$(int,int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 32,
-            "name": "I Click on “CONTINUE” bttn",
-            "match": {
-              "location": "ShoppingCartSteps.iClickOnCONTINUEBttn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 33,
-            "name": "I Select Radio Button “Credit Card”",
-            "match": {
-              "location": "ShoppingCartSteps.iSelectRadioButtonCreditCard()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 34,
-            "name": "I Select “Master card” From Select credit card dropdown",
-            "match": {
-              "location": "ShoppingCartSteps.iSelectMasterCardFromSelectCreditCardDropdown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 35,
-            "name": "I  Fill all the details",
-            "match": {
-              "location": "ShoppingCartSteps.iFillAllTheDetails()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 36,
-            "name": "I Click on button “CONTINUE”",
-            "match": {
-              "location": "ShoppingCartSteps.iClickOnButtonCONTINUE()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 37,
-            "name": "I Verify “Payment Method” is “Credit Card”",
-            "match": {
-              "location": "ShoppingCartSteps.iVerifyPaymentMethodIsCreditCard()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 38,
-            "name": "I Verify “Shipping Method” is “Next Day Air”",
-            "match": {
-              "location": "ShoppingCartSteps.iVerifyShippingMethodIsNextDayAir()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 39,
-            "name": "I Verify Total is “$2,950.00”",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 20
-                },
-                {
-                  "val": "950",
-                  "offset": 22
-                },
-                {
-                  "val": "00",
-                  "offset": 26
-                }
-              ],
-              "location": "ShoppingCartSteps.iVerifyTotalIs$(int,int,int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 40,
-            "name": "I Click on “CONFIRM”",
-            "match": {
-              "location": "ShoppingCartSteps.iClickOnCONFIRM()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 41,
-            "name": "I Verify the Text “Thank You”",
-            "match": {
-              "location": "ShoppingCartSteps.iVerifyTheTextThankYou()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 42,
-            "name": "I Verify the message “Your order has been successfully processed!”",
-            "match": {
-              "location": "ShoppingCartSteps.iVerifyTheMessageYourOrderHasBeenSuccessfullyProcessed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 43,
-            "name": "I Click on btn “CONTINUE”",
-            "match": {
-              "location": "ShoppingCartSteps.iClickOnBtnCONTINUE()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 44,
-            "name": "I Verify the text “Welcome to our store”",
-            "match": {
-              "location": "ShoppingCartSteps.iVerifyTheTextWelcomeToOurStore()"
+              "location": "TopMenuSteps.iCanSeeRedirectedPageName()"
             },
             "keyword": "Then "
           }
@@ -698,15 +84,15 @@
         "tags": [
           {
             "line": 4,
-            "name": "@smoke"
+            "name": "@regression"
           }
         ]
       }
     ],
-    "name": "Product sucessfully added in shopping cart",
-    "description": "As user I can add product in shopping cart successfully",
-    "id": "product-sucessfully-added-in-shopping-cart",
+    "name": "Topmenu functionality",
+    "description": "As user I can check all topmenu\u0027s functionalities",
+    "id": "topmenu-functionality",
     "keyword": "Feature",
-    "uri": "computer.feature"
+    "uri": "topmenu.feature"
   }
 ]

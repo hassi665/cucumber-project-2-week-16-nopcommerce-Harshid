@@ -153,17 +153,17 @@ public class RegistrationPage extends Utility {
         log.info("Click on Continue Button After Registration is Completed " + continueButtonAfterRegistrationComplete.toString());
     }
 
-    public void registrationFormFillUp(String gender, String fName, String lName, String day, String month, String year, String email, String rPassword, String cPassword ){
+    public void registrationFormFillUp( ){
 
-            selectGenderOnRegistrationPage(gender);
-            sendTextToFirstNameField(fName);
-            sendTextToLastNameField(lName);
-            selectDayOfBirth(day);
-            selectDayOfMonth(month);
-            selectDayOfYear(year);
-            sendTextToEmailField(email);
-            sendTextToPasswordField(rPassword);
-            sendTextToConfirmPasswordField(cPassword);
+            selectGenderOnRegistrationPage("Male");
+            sendTextToFirstNameField("Axay");
+            sendTextToLastNameField("Kumar");
+            selectDayOfBirth("1");
+            selectDayOfMonth("5");
+            selectDayOfYear("1988");
+            sendTextToEmailField("Axay.kumar");
+            sendTextToPasswordField("Axay123");
+            sendTextToConfirmPasswordField("Axay123");
     }
 
 }

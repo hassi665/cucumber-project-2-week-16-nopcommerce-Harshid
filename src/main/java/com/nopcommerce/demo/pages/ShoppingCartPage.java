@@ -20,7 +20,7 @@ public class ShoppingCartPage extends Utility {
 
 
     @CacheLookup
-    @FindBy(xpath = "//div[@class='page-title']")
+    @FindBy(xpath = "//h1[contains(text(),'Shopping cart')]")
     WebElement shoppingCartText;
 
     @CacheLookup
@@ -41,10 +41,11 @@ public class ShoppingCartPage extends Utility {
     WebElement checkoutButton;
 
 
-    public String getShoppingCartText() {
+    public String getShoppingCartText() throws InterruptedException {
 
         String text = getTextFromElement(shoppingCartText);
-        log.info("Shopping cart text : " + shoppingCartText.toString());
+        Thread.sleep(2000);
+        log.info("Shopping cart" + shoppingCartText.toString());
         return text;
     }
 

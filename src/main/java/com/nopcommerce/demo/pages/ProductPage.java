@@ -48,10 +48,15 @@ public class ProductPage extends Utility {
     @FindBy(xpath = "//a[contains(text(),'Nokia Lumia 1020')]")
     WebElement mobileNokia;
 
+    @CacheLookup
+    @FindBy(xpath = "//div[@class='product-name']/h1")
+    WebElement mobileNokiaName;
+
+
     public String getProductName() {
 
-        String text = getTextFromElement(mobileNokia);
-        log.info("The product " + mobileNokia.toString());
+        String text = getTextFromElement(mobileNokiaName);
+        log.info("The product " + mobileNokiaName.toString());
         return text;
     }
 

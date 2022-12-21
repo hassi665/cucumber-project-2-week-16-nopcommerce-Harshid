@@ -10,31 +10,28 @@ import org.testng.Assert;
 
 public class TopMenuSteps extends Utility {
 
-    TopMenuPage topMenuPage;
+    TopMenuPage topMenuPage = new TopMenuPage();
 
     @Given("^I am on homepage$")
     public void iAmOnHomepage() {
     }
 
-
-    @When("^I passed parameter Electronics & verify page nevigated to the right place$")
-    public void iPassedParameterElectronicsVerifyPageNevigatedToTheRightPlace() {
-
-        topMenuPage.selectMenu("Electronics");
-        topMenuPage.textOnEachPage();
-        Assert.assertEquals(topMenuPage.textOnEachPage(), "Electronics");
-    }
-
-    @And("^I passed parameter Computers & verify page nevigated to the right place$")
-    public void iPassedParameterComputersVerifyPageNevigatedToTheRightPlace() {
-
-        topMenuPage.selectMenu("Computers");
-        topMenuPage.textOnEachPage();
-        Assert.assertEquals(topMenuPage.textOnEachPage(), "Computers");
+    @When("^I select any top menu's option$")
+    public void iSelectAnyTopMenuSOption() throws InterruptedException {
+        Thread.sleep(1000);
+        topMenuPage.hoverOverMenu("Computers");
 
     }
 
-    @Then("^I can see the right pages$")
-    public void iCanSeeTheRightPages() {
+    @And("^I click on submenu option$")
+    public void iClickOnSubmenuOption() throws InterruptedException {
+
+        Thread.sleep(1000);
+        topMenuPage.selectMenu("Notebooks");
+    }
+
+    @Then("^I can see redirected page name$")
+    public void iCanSeeRedirectedPageName() {
+        Assert.assertEquals(topMenuPage.textOnEachPage(), "Notebooks");
     }
 }

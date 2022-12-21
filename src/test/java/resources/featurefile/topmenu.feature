@@ -2,9 +2,9 @@ Feature: Topmenu functionality
   As user I can check all topmenu's functionalities
 
   @regression
-  Scenario: User can navigate to other page by passing name in method
-    Given I am on homepage
-    When  I passed parameter Electronics & verify page nevigated to the right place
-    And   I passed parameter Computers & verify page nevigated to the right place
-    Then  I can see the right pages
+  Scenario: User Should navigate to selected page
+    Given  I am on homepage
+    When   I select any top menu's option
+    And    I click on submenu option
+    Then   I can see redirected page name
 

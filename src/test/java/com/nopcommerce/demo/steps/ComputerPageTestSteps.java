@@ -27,9 +27,10 @@ public class ComputerPageTestSteps{
     }
 
     @And("^I Select option Sort By position \"([^\"]*)\"$")
-    public void iSelectOptionSortByPosition(String arg0) {
+    public void iSelectOptionSortByPosition(String arg0) throws InterruptedException {
 
         productPage.selectSortByType("Name: Z to A");
+        Thread.sleep(1500);
     }
 
     @And("^I Verify the Product will arrange in Descending order\\.$")

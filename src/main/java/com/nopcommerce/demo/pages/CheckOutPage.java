@@ -303,35 +303,35 @@ public class CheckOutPage extends Utility {
         log.info("Click on continue Button after thank you " + continueButtonOnThankYouNote.toString());
     }
 
-    public void fillTheForm(String frstName, String lstname, String uEmail, String ctry, String cty, String adrs, String pCode, String num) {
+    public void fillTheForm() {
 
-        sendTextToFirstNameField(frstName);
-        sendTextToLastNameField(lstname);
-        sendTextTOEmailField(uEmail);
-        selectACountryInCountryField(ctry);
-        sendTextToCityField(cty);
-        sendTextToAddressField(adrs);
-        sendTextToPostCodeField(pCode);
-        sendTextToPhoneField(num);
+        sendTextToFirstNameField("Harshid");
+        sendTextToLastNameField("Patel");
+        sendTextTOEmailField("harshid.prime");
+        selectACountryInCountryField("United Kingdom");
+        sendTextToCityField("London");
+        sendTextToAddressField("1 London Street");
+        sendTextToPostCodeField("EN17NJ");
+        sendTextToPhoneField("07418529631");
 
     }
 
-    public void fillThePaymentCardDetails(String crdhlder, String crdnum, String expmnth, String expyr, String scrtcode) {
+    public void fillThePaymentCardDetails() {
 
-        sendTextToCardholderNameField(crdhlder);
-        sendTextToCardNumberField(crdnum);
-        selectExpiryMonth(expmnth);
-        selectExpiryYear(expyr);
-        sendTextToCardCodeField(scrtcode);
+        sendTextToCardholderNameField("Harshid");
+        sendTextToCardNumberField("5555555555554444");
+        selectExpiryMonth("5");
+        selectExpiryYear("2025");
+        sendTextToCardCodeField("123");
     }
 
-    public void fillUpForm(String cntry, String cty, String adrs, String pcode, String phn) {
+    public void fillUpForm() {
 
-        selectACountryInCountryField(cntry);
-        sendTextToCityField(cty);
-        sendTextToAddressField(adrs);
-        sendTextToPostCodeField(pcode);
-        sendTextToPhoneField(phn);
+        selectACountryInCountryField("United Kingdom");
+        sendTextToCityField("London");
+        sendTextToAddressField("1 London Street");
+        sendTextToPostCodeField("EN17NJ");
+        sendTextToPhoneField("07418529631");
 
     }
 }
