@@ -1,7 +1,7 @@
 Feature: Products Page Functionality
   As user I can navigate to page as per requirement
 
-
+  @smoke @regression
   Scenario: User can see product in Computer page in arrange alphabetically
     Given I am at homepage
     When  I Click on Computers Menu
@@ -10,7 +10,7 @@ Feature: Products Page Functionality
     And   I Verify the Product will arrange in Descending order.
 
 
-
+  @sanity @regression
   Scenario: User can see product in Electronics page in arrange alphabetically
     Given I am at homepage
     When  I Mouse Hover on “Electronics” Tab
